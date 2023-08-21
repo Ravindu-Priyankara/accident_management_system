@@ -8,12 +8,12 @@
     $_SESSION['reg'] = $reg;
 
 
-    $sql1 = mysqli_query($conn,"SELECT * FROM Drivers WHERE reg = '$reg' AND pswd = '$password'");
+    $sql1 = mysqli_query($conn,"SELECT * FROM driver WHERE reg = '$reg' AND pswd = '$password'");
     $result = mysqli_num_rows($sql1);
     
     if($result > 0 )
     { 
-        header('Location: update.php');
+        header('Location: ../driver/index.html');
         exit;    
     }
     else

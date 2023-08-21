@@ -13,7 +13,7 @@
 
         if (mysqli_query($conn, $sql))  
         {
-            header('Location: ../login.html');
+            header('Location: ../driver/index.html');
             exit;    
         }
         else
